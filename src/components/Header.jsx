@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Customers from "../pages/Customers.jsx";
 
 const Header = () => {
     return (
@@ -15,13 +16,13 @@ const Header = () => {
                         <Link className="nav-link text-white" to="/">Dashboard</Link>
                     </li>
                     <li className="nav-item text-white">
-                        <a className="nav-link text-white" href="#">Role Manager</a>
+                        <Link  className="nav-link text-white" to="/role-manager">Role Manager</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-white" href="#">Customer Manager</a>
+                        <Link  className="nav-link text-white" to="/customers">Customer Manager</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-white" href="#">Schedule Manager</a>
+                        <Link  className="nav-link text-white" to="/schedule">Schedule Manager</Link>
                     </li>
                 </ul>
                 </div>
