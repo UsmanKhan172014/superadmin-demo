@@ -1,6 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import {useState} from "react";
+import Table from "../components/Table.jsx";
 function Customers(){
     let navigate = useNavigate();
+    const [customers, setCustomers] = useState([]);
     return (
         <div className="container">
             <div className="row">
@@ -18,6 +21,8 @@ function Customers(){
                     <button className="btn btn-primary">Expired Accounts</button>
                 </div>
             </div>
+            <Table/>
+
 
         </div>
     )
